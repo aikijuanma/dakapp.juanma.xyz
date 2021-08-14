@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('fontawesome.css');
+
+// @font-face {
+//     font-family: 'fira_sans_compressedultraLtIt';
+//     src: url('../fonts/firasanscompressed-ultralightitalic-webfont.eot');
+//     src: url('../fonts/firasanscompressed-ultralightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-ultralightitalic-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-ultralightitalic-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-ultralightitalic-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-ultralightitalic-webfont.svg#fira_sans_compressedultraLtIt') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedultraLt';
+//     src: url('../fonts/firasanscompressed-ultralight-webfont.eot');
+//     src: url('../fonts/firasanscompressed-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-ultralight-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-ultralight-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-ultralight-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-ultralight-webfont.svg#fira_sans_compressedultraLt') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedtwoIt';
+//     src: url('../fonts/firasanscompressed-twoitalic-webfont.eot');
+//     src: url('../fonts/firasanscompressed-twoitalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-twoitalic-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-twoitalic-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-twoitalic-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-twoitalic-webfont.svg#fira_sans_compressedtwoIt') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedtwo';
+//     src: url('../fonts/firasanscompressed-two-webfont.eot');
+//     src: url('../fonts/firasanscompressed-two-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-two-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-two-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-two-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-two-webfont.svg#fira_sans_compressedtwo') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedThIt';
+//     src: url('../fonts/firasanscompressed-thinitalic-webfont.eot');
+//     src: url('../fonts/firasanscompressed-thinitalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-thinitalic-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-thinitalic-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-thinitalic-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-thinitalic-webfont.svg#fira_sans_compressedThIt') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedthin';
+//     src: url('../fonts/firasanscompressed-thin-webfont.eot');
+//     src: url('../fonts/firasanscompressed-thin-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-thin-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-thin-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-thin-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-thin-webfont.svg#fira_sans_compressedthin') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedSBdIt';
+//     src: url('../fonts/firasanscompressed-SemiBoldItalic-webfont.eot');
+//     src: url('../fonts/firasanscompressed-SemiBoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-SemiBoldItalic-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-SemiBoldItalic-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-SemiBoldItalic-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-SemiBoldItalic-webfont.svg#fira_sans_compressedSBdIt') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedsemibold';
+//     src: url('../fonts/firasanscompressed-SemiBold-webfont.eot');
+//     src: url('../fonts/firasanscompressed-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-SemiBold-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-SemiBold-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-SemiBold-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-SemiBold-webfont.svg#fira_sans_compressedsemibold') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedregular';
+//     src: url('../fonts/firasanscompressed-regular-webfont.eot');
+//     src: url('../fonts/firasanscompressed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-regular-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-regular-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-regular-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-regular-webfont.svg#fira_sans_compressedregular') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedMdIt';
+//     src: url('../fonts/firasanscompressed-MediumItalic-webfont.eot');
+//     src: url('../fonts/firasanscompressed-MediumItalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-MediumItalic-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-MediumItalic-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-MediumItalic-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-MediumItalic-webfont.svg#fira_sans_compressedMdIt') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedmedium';
+//     src: url('../fonts/firasanscompressed-Medium-webfont.eot');
+//     src: url('../fonts/firasanscompressed-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-Medium-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-Medium-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-Medium-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-Medium-webfont.svg#fira_sans_compressedmedium') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedLtIt';
+//     src: url('../fonts/firasanscompressed-lightitalic-webfont.eot');
+//     src: url('../fonts/firasanscompressed-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-lightitalic-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-lightitalic-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-lightitalic-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-lightitalic-webfont.svg#fira_sans_compressedLtIt') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedlight';
+//     src: url('../fonts/firasanscompressed-light-webfont.eot');
+//     src: url('../fonts/firasanscompressed-light-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-light-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-light-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-light-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-light-webfont.svg#fira_sans_compressedlight') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compresseditalic';
+//     src: url('../fonts/firasanscompressed-italic-webfont.eot');
+//     src: url('../fonts/firasanscompressed-italic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-italic-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-italic-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-italic-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-italic-webfont.svg#fira_sans_compresseditalic') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedHvIt';
+//     src: url('../fonts/firasanscompressed-HeavyItalic-webfont.eot');
+//     src: url('../fonts/firasanscompressed-HeavyItalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-HeavyItalic-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-HeavyItalic-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-HeavyItalic-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-HeavyItalic-webfont.svg#fira_sans_compressedHvIt') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedheavy';
+//     src: url('../fonts/firasanscompressed-Heavy-webfont.eot');
+//     src: url('../fonts/firasanscompressed-Heavy-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-Heavy-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-Heavy-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-Heavy-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-Heavy-webfont.svg#fira_sans_compressedheavy') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedhairIt';
+//     src: url('../fonts/firasanscompressed-hairitalic-webfont.eot');
+//     src: url('../fonts/firasanscompressed-hairitalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-hairitalic-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-hairitalic-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-hairitalic-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-hairitalic-webfont.svg#fira_sans_compressedhairIt') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedhair';
+//     src: url('../fonts/firasanscompressed-hair-webfont.eot');
+//     src: url('../fonts/firasanscompressed-hair-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-hair-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-hair-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-hair-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-hair-webfont.svg#fira_sans_compressedhair') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedfourIt';
+//     src: url('../fonts/firasanscompressed-fouritalic-webfont.eot');
+//     src: url('../fonts/firasanscompressed-fouritalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-fouritalic-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-fouritalic-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-fouritalic-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-fouritalic-webfont.svg#fira_sans_compressedfourIt') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedfour';
+//     src: url('../fonts/firasanscompressed-four-webfont.eot');
+//     src: url('../fonts/firasanscompressed-four-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-four-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-four-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-four-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-four-webfont.svg#fira_sans_compressedfour') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedXLtIt';
+//     src: url('../fonts/firasanscompressed-extralightitalic-webfont.eot');
+//     src: url('../fonts/firasanscompressed-extralightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-extralightitalic-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-extralightitalic-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-extralightitalic-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-extralightitalic-webfont.svg#fira_sans_compressedXLtIt') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedXLt';
+//     src: url('../fonts/firasanscompressed-extralight-webfont.eot');
+//     src: url('../fonts/firasanscompressed-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-extralight-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-extralight-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-extralight-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-extralight-webfont.svg#fira_sans_compressedXLt') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedXBdIt';
+//     src: url('../fonts/firasanscompressed-ExtraBoldItalic-webfont.eot');
+//     src: url('../fonts/firasanscompressed-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-ExtraBoldItalic-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-ExtraBoldItalic-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-ExtraBoldItalic-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-ExtraBoldItalic-webfont.svg#fira_sans_compressedXBdIt') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedextrabold';
+//     src: url('../fonts/firasanscompressed-ExtraBold-webfont.eot');
+//     src: url('../fonts/firasanscompressed-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-ExtraBold-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-ExtraBold-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-ExtraBold-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-ExtraBold-webfont.svg#fira_sans_compressedextrabold') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedeightIt';
+//     src: url('../fonts/firasanscompressed-eightitalic-webfont.eot');
+//     src: url('../fonts/firasanscompressed-eightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-eightitalic-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-eightitalic-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-eightitalic-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-eightitalic-webfont.svg#fira_sans_compressedeightIt') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedeight';
+//     src: url('../fonts/firasanscompressed-eight-webfont.eot');
+//     src: url('../fonts/firasanscompressed-eight-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-eight-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-eight-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-eight-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-eight-webfont.svg#fira_sans_compressedeight') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedBkIt';
+//     src: url('../fonts/firasanscompressed-bookitalic-webfont.eot');
+//     src: url('../fonts/firasanscompressed-bookitalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-bookitalic-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-bookitalic-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-bookitalic-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-bookitalic-webfont.svg#fira_sans_compressedBkIt') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedbook';
+//     src: url('../fonts/firasanscompressed-book-webfont.eot');
+//     src: url('../fonts/firasanscompressed-book-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-book-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-book-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-book-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-book-webfont.svg#fira_sans_compressedbook') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedBdIt';
+//     src: url('../fonts/firasanscompressed-BoldItalic-webfont.eot');
+//     src: url('../fonts/firasanscompressed-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-BoldItalic-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-BoldItalic-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-BoldItalic-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-BoldItalic-webfont.svg#fira_sans_compressedBdIt') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }
+//
+// @font-face {
+//     font-family: 'fira_sans_compressedbold';
+//     src: url('../fonts/firasanscompressed-Bold-webfont.eot');
+//     src: url('../fonts/firasanscompressed-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/firasanscompressed-Bold-webfont.woff2') format('woff2'),
+//          url('../fonts/firasanscompressed-Bold-webfont.woff') format('woff'),
+//          url('../fonts/firasanscompressed-Bold-webfont.ttf') format('truetype'),
+//          url('../fonts/firasanscompressed-Bold-webfont.svg#fira_sans_compressedbold') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }

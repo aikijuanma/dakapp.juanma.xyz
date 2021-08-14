@@ -1,0 +1,156 @@
+// main: default.less
+
+@import url('bootstrap.min.css');
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+@import url('fonts.less');
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+.CrimsonPro { font-family: 'Crimson Pro', serif; }
+.FiraSans { font-family: 'Fira Sans Extra Condensed', sans-serif; }
+.NunitoSans { font-family: 'Nunito Sans', sans-serif; }
+
+.thin { font-weight: 100; }
+.extra_light { font-weight: 200; }
+.light { font-weight: 300; }
+.regular { font-weight: 400; }
+.medium { font-weight: 500; }
+.semi_bold { font-weight: 600; }
+.bold { font-weight: 700; }
+.extra_bold { font-weight: 800; }
+.black { font-weight: 900; }
+
+.italic { font-style: italic; }
+.normal { font-style: normal; }
+
+@Black: #121315;
+@Blue: #0057ba;
+@Copper: #ab947d;
+@Crimson: #c80036;
+@Grey: #939697;
+@White: #ffffff;
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+* {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 1px transparent;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.01);
+}
+
+.fadeIn {
+  .visible;
+
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fadeOut {
+  .invisible;
+
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut;
+
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-webkit-keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.hide {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.show {
+  display: block;
+}
+
+.translucent {
+  opacity: 0.50;
+  filter: alpha(opacity=50);
+}
+
+.transparent {
+  opacity: 0;
+  filter:alpha(opacity=0);
+}
+
+.transition {
+  -webkit-backface-visibility: hidden; // fix for transition flickering
+  -webkit-transition: .3s ease;
+     -moz-transition: .3s ease;
+      -ms-transition: .3s ease;
+       -o-transition: .3s ease;
+          transition: .3s ease;
+}
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.visible {
+  visibility: visible;
+}
+
+.flipH {
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+      transform: scale(-1, 1)
+}
+
+.flipV {
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+      transform: scale(1, -1);
+}
