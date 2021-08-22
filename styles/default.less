@@ -616,6 +616,172 @@ html {
         ////////////////////////////////////////////////////// SECTION 3
 
         section.siLJsYxXs {
+
+          @siLJsYxXsContainerWidth: 64%;
+
+          color: fade(@Black, 64%);
+          text-align: center;
+
+          > .container,
+          > .container-fluid {
+            padding: 1.28rem * 5 1.28rem * 5;
+
+            > .row {
+
+              &:nth-of-type(1) {
+                margin-bottom: 1.28rem * 4;
+              }
+
+              &:nth-of-type(2) {
+                margin-bottom: 1.28rem * 4;
+              }
+
+              > .col {
+                padding-right: 1.28rem * 1.5;
+                padding-right: 1.28rem * 1.5;
+                margin-top: 1.28rem * 3;
+
+                &:nth-last-of-type(1) {
+
+                  > .card {
+                    background-color: transparent;
+                    border: 0;
+                    border-radius: 0;
+                    border-top-left-radius:  .32rem * 4;
+                    border-top-right-radius:  .32rem * 4;
+                    color: fade(@Black, 64%);
+                    overflow: hidden;
+                    position: relative;
+                    height: 100%;
+
+                    .card-body {
+                      padding: 1.28rem * 2 1.28rem * 2;
+                      position: absolute;
+                      bottom: 0;
+                      opacity: 1;
+
+                      svg {
+                        opacity: .8;
+                        width: 100% / 2.5;
+                        display: block;
+                        margin: 1.28rem * 1.25 auto;
+                      }
+
+                      .card-text {
+                        .NunitoSans; .regular;
+                        font-size: 1.28rem * 1.5;
+                        line-height: 1.28rem * 1.64;
+                        margin: 0 auto;
+                        width: 64%;
+                      }
+
+                      button {
+                        .regular;
+                        background-color: darken(@Crimson, 2%);
+                        border: 0;
+                        border-radius: .32rem;
+                        color: darken(@White, 4%);
+                        display: inline-block;
+                        font-size: 1.4rem;
+                        line-height: 1.6rem;
+                        margin: 1.28rem * 3 0 1.28rem * 5 0;
+                        height: 64px; width: auto;
+                        padding: 1.28rem 1.28rem * 2;
+                        text-transform: uppercase;
+
+                        &:focus,
+                        &:hover {
+                          background-color: @Crimson;
+                          color: @White;
+                        }
+
+                        &:focus,
+                        &:focus-within,
+                        &:focus-visible {
+                          border-color: transparent;
+                          box-shadow: none;
+                          outline: 0;
+                        }
+
+                        > i {
+                          .bold;
+                          margin-left: .4rem;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                > .card {
+                  background-color: fade(@Copper, 96%);
+                  border: 0;
+                  border-radius: 0;
+                  border-top-left-radius:  .32rem * 4;
+                  border-top-right-radius:  .32rem * 4;
+                  color: fade(@Black, 64%);
+                  overflow: hidden;
+
+                  &:focus,
+                  &:hover {
+
+                    img {
+                      transform: scale(1.05);
+                      opacity: 1;
+                    }
+
+                    .card-body {
+                      opacity: 1;
+                    }
+                  }
+
+                  img {
+                    .transition;
+                    border-top-left-radius:  .32rem * 4;
+                    border-top-right-radius:  .32rem * 4;
+                    opacity: .9;
+                  }
+
+                  .card-body {
+                    .transition;
+                    padding: 1.28rem * 2 1.28rem * 2;
+                    opacity: .8;
+
+                    .card-title {
+                      .FiraSans; .semi_bold;
+                      font-size: 1.28rem * 2;
+                      margin: 0 auto;
+                      margin-bottom: 1.28rem;
+                      width: auto;
+                    }
+
+                    .card-text {
+                      .NunitoSans; .regular;
+                      font-size: 1.28rem * 1.5;
+                      line-height: 1.28rem * 1.64;
+                      margin: 0 auto;
+                      width: auto;
+                    }
+                  }
+                }
+
+                h5 {
+                  display: block;
+                  font-size: 1.28rem * 1.96;
+                  margin: 1.28rem auto;
+                  width: @siLJsYxXsContainerWidth;
+                }
+
+                p {
+                  .NunitoSans; .light;
+                  display: block;
+                  font-size: 1.28rem * 1.16;
+                  line-height: 1.28rem * 1.64;
+                  margin: 0 auto;
+                  width: @siLJsYxXsContainerWidth;
+                }
+              }
+            }
+          }
         }
 
         ////////////////////////////////////////////////////////////////
