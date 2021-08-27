@@ -71,8 +71,107 @@ html {
           @headerHeight: 80px;
 
           .navbar {
+            .transition;
             border-bottom: 1px solid @White;
             padding-top: 0; padding-bottom: 0;
+
+            &.is-active {
+              background: @White;
+              border-bottom: 1px solid @Black;
+
+              .navbar-brand {
+
+                svg {
+                  .transition;
+                  fill: @Black;
+                }
+              }
+
+              .navbar-toggler {
+
+                &:focus {
+                }
+
+                > .navbar-toggler-icon {
+                }
+
+                &[aria-expanded="false"] {
+
+                  > .navbar-toggler-icon {
+                  }
+                }
+
+                &[aria-expanded="true"] {
+
+                  > .navbar-toggler-icon {
+                  }
+                }
+              }
+
+              .navbar-collapse {
+
+                > ul {
+
+                  > li {
+
+                    > a.nav-link {
+                      .transition;
+                      border-bottom: 2px solid transparent;
+                      color: darken(@Black, 4%);
+
+                      &.active {
+                        border-bottom: 2px solid @Black;
+                        color: @Black;
+                      }
+
+                      &:focus,
+                      &:hover {
+                        border-bottom: 2px solid @Black;
+                        color: @Black;
+                      }
+                    }
+                  }
+                }
+              }
+
+              form {
+
+                .btn {
+                  .transition;
+                  border-bottom: 2px solid transparent;
+                  color: darken(@Black, 4%);
+
+                  &:focus,
+                  &:focus-within,
+                  &:focus-visible {
+                    border-color: transparent;
+                    box-shadow: none;
+                    outline: 0;
+                  }
+
+                  &:nth-of-type(1) {
+                    &:focus,
+                    &:hover {
+                      color: @Black;
+                      background-color: fade(@Black, 8%);
+                    }
+                  }
+
+                  &:nth-of-type(2) {
+                    background-color: darken(@Crimson, 2%);
+                    border-bottom: 1px solid @Crimson;
+                    color: darken(@White, 4%);
+
+                    &:focus,
+                    &:hover {
+                      background-color: @Crimson;
+                      border-bottom: 1px solid @Crimson;
+                      color: @White;
+                    }
+                  }
+                }
+              }
+            }
 
             > .container,
             > .container-fluid {
@@ -88,6 +187,7 @@ html {
               svg {
                 height: 1.28rem * 1.6; width: auto;
                 vertical-align: sub;
+                fill: @White;
               }
             }
 
@@ -136,44 +236,6 @@ html {
                   display: inline-block;
                   padding: 0 1.28rem * 1.6;
 
-                  // &.nav-item {
-                  //
-                  //   &.dropdown {
-                  //
-                  //     > a.nav-link {
-                  //       .transition;
-                  //
-                  //       &:focus,
-                  //       &:hover {
-                  //       }
-                  //
-                  //       &.dropdown-toggle {
-                  //         cursor: pointer;
-                  //
-                  //         &:after {
-                  //           // .hide;
-                  //         }
-                  //       }
-                  //     }
-                  //
-                  //     > .dropdown-menu {
-                  //       background-color: transparent;
-                  //       border: 0;
-                  //       font-size: .75rem;
-                  //
-                  //       a.dropdown-item {
-                  //         color: darken(@White, 8%);
-                  //
-                  //         &:focus,
-                  //         &:hover {
-                  //           background-color: transparent;
-                  //           color: @White;
-                  //         }
-                  //       }
-                  //     }
-                  //   }
-                  // }
-
                   > a.nav-link {
                     .transition;
                     border-bottom: 2px solid transparent;
@@ -200,7 +262,6 @@ html {
             }
 
             form {
-              //height: @headerHeight;
 
               .btn {
                 .transition;
@@ -232,12 +293,12 @@ html {
 
                 &:nth-of-type(2) {
                   background-color: darken(@Crimson, 2%);
-                  border-bottom: 2px solid transparent;
+                  border-bottom: 1px solid @Crimson;
 
                   &:focus,
                   &:hover {
                     background-color: @Crimson;
-                    border-bottom: 2px solid transparent;
+                    border-bottom: 1px solid @Crimson;
                     color: @White;
                   }
                 }
@@ -1125,6 +1186,7 @@ html {
               svg {
                 height: 1.28rem * 3.2; width: auto;
                 margin: 0 auto;
+                fill: darken(@White, 16%);
               }
 
               h5 {

@@ -25,72 +25,35 @@
     $('body').removeClass('invisible').addClass('fadeIn');
   }
 
-  function parallaxHeader() { // https://codepen.io/theaftermath87/pen/mJqywj
+  function parallaxHeader() {
 
-    var w=window,
-    d=document,
-    e=d.documentElement,
-    g=d.getElementsByTagName('body')[0],
-    x=w.innerWidth||e.clientWidth||g.clientWidth,
-    y=w.innerHeight||e.clientHeight||g.clientHeight;
-
-    var $falseHeader = $('.falseHeader');
-    var $shadower = $('.shadower');
-    var $fixedHead = $('.fixedHead');
+    var $falseHeader = $('body > .page > .container-fluid > main');
+    var $fixedHead = $('.navbar');
     var stickyHeight = $falseHeader.offset().top;
-
-    if (x >= 992 && x <= 1919 ) {
-
-      $fixedHead.css({
-        backgroundPosition: '50% -215' + 'px'
-      });
-    } else if (x >= 1920 && y <= 1199 ) {
-
-      $fixedHead.css({
-        backgroundPosition: '50% -430' + 'px'
-      });
-    } else if (x >= 1920 && y >= 1200 ) {
-
-      $fixedHead.css({
-        backgroundPosition: '50% -512' + 'px'
-      });
-    }
 
     $(window).scroll(function() {
 
-      var wScroll = $(this).scrollTop();
-      var headScroll = (-wScroll / 2);
-      var faderScroll = (wScroll / 400);
-      var fadeToColor = Math.min(faderScroll, 1);
-
-      $shadower.css({
-        opacity: fadeToColor
-      });
-
-      if (x >= 992 && x <= 1919 ) {
-
-        $fixedHead.css({
-          backgroundPosition: '50%' + (-215 + headScroll) + 'px'
-        });
-      } else if (x >= 1920 && y <= 1199 ) {
-
-        $fixedHead.css({
-          backgroundPosition: '50%' + (-430 + headScroll) + 'px'
-        });
-      } else if (x >= 1920 && y >= 1200 ) {
-
-        $fixedHead.css({
-          backgroundPosition: '50%' + (-512 + headScroll) + 'px'
-        });
-      }
-
-      if (wScroll >= stickyHeight) {
-        $falseHeader.addClass('clipped');
+      if ($(window).scrollTop() > $falseHeader.height()) {
+          $fixedHead.addClass('is-active');
       } else {
-        $falseHeader.removeClass('clipped');
+          $fixedHead.removeClass('is-active');
       }
-
     });
+
+    // $(window).scroll(function() {
+    //
+    //   var wScroll = $(this).scrollTop();
+    //
+    //   if (wScroll >= stickyHeight) {
+    //     fixedHead.addClass('is_active');
+    //   } else {
+    //     fixedHead.removeClass('is_active');
+    //   }
+    //   console.log(wScroll);
+    // });
+
+    console.log(stickyHeight);
+
   }
 
   function smoothScrollToTop() {
@@ -109,8 +72,9 @@ jQuery(document).ready(function($) {
   revealContent();
   smoothScrollToTop();
 
-  if (document.body.classList.contains('index-8oGCaMDs')) {
+  if (document.body.classList.contains('index-Kr99nnb4')) {
     parallaxHeader();
+    console.log('hello!');
   }
 
   console.log('↑ ↑ ↓ ↓ ← → ← → b a');
