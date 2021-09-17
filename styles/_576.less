@@ -1,0 +1,548 @@
+// main: default.less
+
+@media (min-width: 442px) {
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+  html {
+
+    body {
+
+      .page {
+
+        > .container,
+        > .container-fluid {
+
+          main {
+
+            > .container,
+            > .container-fluid {
+              background-position: -275px center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+@media (min-width: 576px) {
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+html {
+  height: 100%; width: 100%;
+  margin: 0;
+  padding: 0;
+
+  body {
+    height: 100%; width: 100%;
+    margin: 0;
+    padding: 0;
+
+    .page {
+
+      > .container,
+      > .container-fluid {
+        padding-right: 0; padding-left: 0;
+
+        @headerHeight: 128px;
+        @mainHeight: 640px;
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////// HEADER
+
+        header {
+
+          ////////////////////////////////////////////////////////////////
+          ///////////////////////////////////////////////// NAVBAR DEFAULT
+
+          .navbar {
+
+            .navbar-brand {
+              padding: 1rem;
+            }
+
+            .navbar-toggler {
+              padding: 1rem;
+            }
+          }
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////// MAIN
+
+        main {
+          height: @mainHeight;
+
+          > .container,
+          > .container-fluid {
+            background-position: -275px center;
+          }
+
+          > form {
+
+            @mainInputHeight: 64px / 1.6;
+            @mainCTAWidth: 64%;
+
+            border-radius: 1.28rem;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            height: auto; width: @mainCTAWidth;
+            left: 0; top: 48%;
+          }
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////// HOME
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////// SECTION 1
+
+        section.sIFtIfCa4 {
+
+          @sIFtIfCa4ColumnWidth: 90%;
+
+          > .container,
+          > .container-fluid {
+            margin-top: 1.28rem * 3;
+
+            > .row {
+              margin: 0;
+
+              &:nth-of-type(1) > .col:nth-of-type(1) > img {
+                box-shadow: 1.28rem / 2 1.28rem / 2 @Blue;
+
+                &:focus,
+                &:hover {
+                  box-shadow: 1.28rem 1.28rem @Blue;
+                }
+              }
+              &:nth-of-type(2) > .col:nth-of-type(2) > img {
+                box-shadow: -1.28rem / 2 1.28rem / 2 @Copper;
+
+                &:focus,
+                &:hover {
+                  box-shadow: -1.28rem 1.28rem @Copper;
+                }
+              }
+              &:nth-of-type(3) > .col:nth-of-type(1) > img {
+                box-shadow: 1.28rem / 2 1.28rem / 2 @Grey;
+
+                &:focus,
+                &:hover {
+                  box-shadow: 1.28rem 1.28rem @Grey;
+                }
+              }
+              &:nth-of-type(4) > .col:nth-of-type(2) > img {
+                box-shadow: -1.28rem / 2 1.28rem / 2 @Crimson;
+
+                &:focus,
+                &:hover {
+                  box-shadow: -1.28rem 1.28rem @Crimson;
+                }
+              }
+
+              &:nth-of-type(1) > .col:nth-of-type(1),
+              &:nth-of-type(3) > .col:nth-of-type(1) {
+
+                > img {
+                  float: right;
+                  margin-right: 1.28rem;
+                }
+              }
+
+              &:nth-of-type(2) > .col:nth-of-type(2),
+              &:nth-of-type(4) > .col:nth-of-type(2) {
+
+                > img {
+                  float: left;
+                  margin-left: 1.28rem;
+                }
+              }
+
+              &:nth-of-type(1) > .col:nth-of-type(2),
+              &:nth-of-type(3) > .col:nth-of-type(2) {
+
+                > div {
+                  float: left;
+                  margin-left: 1.28rem;
+                }
+              }
+
+              &:nth-of-type(2) > .col:nth-of-type(1),
+              &:nth-of-type(4) > .col:nth-of-type(1) {
+
+                > div {
+                  float: right;
+                  margin-right: 0;
+                }
+              }
+
+              &:nth-of-type(1) > .col:nth-of-type(2),
+              &:nth-of-type(2) > .col:nth-of-type(1),
+              &:nth-of-type(3) > .col:nth-of-type(2),
+              &:nth-of-type(4) > .col:nth-of-type(1) {
+
+                > div {
+                  height: auto; width: @sIFtIfCa4ColumnWidth;
+                }
+
+                h5 {
+                  font-size: 1.28rem * 1.96;
+                  line-height: 1.28rem * 1.8;
+                  margin: 1.28rem 0 .5rem 0;
+                }
+
+                p {
+                  font-size: 1.28rem / 1.25;
+                  line-height: 1.28rem;
+                  margin-bottom: 0;
+                  padding-right: 1.28rem;
+                }
+
+                a {
+                  border: 0;
+                  border-radius: .32rem * 2;
+                  font-size: 1.1rem;
+                  line-height: 1.2rem;
+                  margin: 1.28rem 0 1.28rem * 3 0;
+                  height: auto; width: auto;
+                  padding: 1.28rem / 1.5 1.28rem;
+
+                  > i {
+                    margin-left: .4rem;
+                  }
+                }
+              }
+
+              > .col {
+                padding-left: 0;
+                padding-right: 0;
+
+                img {
+                  height: auto; width: @sIFtIfCa4ColumnWidth;
+                }
+              }
+            }
+          }
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////// SECTION 2
+
+        section.sEFR547JJ {
+          padding: 1.28rem * 3 1.28rem * 1.5 1.28rem * 1.5 1.28rem * 1.5;
+
+          h4 {
+            font-size: 1.28rem * 2;
+            line-height: 1.28rem * 2.2;
+            margin-top: 0;
+            margin-bottom: 1.28rem;
+          }
+
+          > .container,
+          > .container-fluid {
+
+            > .row {
+
+              &:nth-of-type(1) {
+                padding-bottom: 0;
+                border-bottom: 1px solid fade(@White, 32%);
+              }
+
+              &:nth-of-type(2) {
+                padding-top: 0;
+              }
+
+              > .col {
+                margin-bottom: 1.28rem * 1.5;
+                margin-top: 1.28rem * 1.5;
+
+                &:nth-child(1) {
+                  padding: 0 1.28rem * 1.5 0 0;
+                }
+
+                &:nth-child(2) {
+                  padding: 0 1.28rem * 1.5;
+                  border-right: 1px solid fade(@White, 32%);
+                  border-left: 1px solid fade(@White, 32%);
+                }
+
+                &:nth-child(3) {
+                  padding: 0 0 0 1.28rem * 1.5;
+                }
+
+                svg {
+                  height: 1.28rem * 2; width: auto;
+                  margin: 1.28rem 1.28rem * 2;
+                  margin-left: 0;
+                }
+
+                h5 {
+                  font-size: 1.28rem * 1.2;
+                  line-height: 1.28rem * 1.4;
+                  margin-bottom: 1.28rem / 1.6;
+                }
+
+                p {
+                  .NunitoSans; .light;
+                  font-size: 1.28rem / 1.5;
+                  line-height: 1.28rem / 1.1;
+                  padding-right: 0;
+                }
+              }
+            }
+          }
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////// SECTION 3
+
+        section.siLJsYxXs {
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////// SECTION 4
+
+        section.sagf4ElIb {
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////// SECTION 5
+
+        section.smeXZI4gU {
+
+          @smeXZI4gUContainerWidth: 90%;
+
+          > .container,
+          > .container-fluid {
+            padding: 1.28rem * 3 1.28rem * 1.5;
+
+            > .row {
+              margin: 0 auto;
+
+              > .col {
+
+                h5 {
+                  font-size: 1.28rem * 1.5;
+                  line-height: 1.28rem * 1.75;
+                  margin: 0 auto;
+                  margin-bottom: 1.28rem;
+                  height: auto; width: @smeXZI4gUContainerWidth;
+                }
+
+                p {
+                  font-size: 1.28rem;
+                  line-height: 1.28rem * 1.1;
+                  margin: 0 auto;
+                  height: auto; width: @smeXZI4gUContainerWidth;
+                }
+              }
+
+              &:nth-child(2) {
+                padding-top: 0;
+                margin-top: 1.28rem * 2;
+
+                > .col {
+                  margin-top: 0;
+
+                  &:nth-child(1) {
+                    padding: 0;
+                  }
+
+                  &:nth-child(2) {
+                    padding: 0;
+                    margin-top: 0;
+                    border-right: 1px solid fade(@Black, 16%);
+                    border-left: 1px solid fade(@Black, 16%);
+                  }
+
+                  &:nth-child(3) {
+                    padding: 0;
+                    margin-top: 0;
+                  }
+
+                  a {
+
+                    img {
+                      height: auto; width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////// SECTION 6
+
+        section.sKoDwaH2H {
+
+          @sKoDwaH2HButtonHeight: 64px;
+
+          .card-group {
+
+            .card {
+              padding: 1.28rem;
+              margin-bottom: 0;
+
+              .card-body {
+                padding-right: 0;
+                padding: 0;
+                padding-bottom: @sKoDwaH2HButtonHeight;
+
+                .card-title {
+                  font-size: 1.28rem * 1.25;
+                  margin-bottom: 1.28rem;
+
+                  b {
+                    font-size: 1.28rem * 1.5;
+                  }
+
+                  small {
+                    font-size: 1.28rem * 1.2;
+                    margin-left: 1.28rem / 3;
+                  }
+                }
+
+                .card-text {
+                  font-size: 1.28rem / 1.5;
+                  margin-bottom: 1.28rem * 1.5;
+                }
+
+                a {
+                  border: 0;
+                  border-radius: .32rem * 2;
+                  font-size: 1rem;
+                  line-height: 1.6rem;
+                  margin-bottom: 0;
+                  margin: 0 auto;
+                  height: auto; width: 100%;
+                  padding: 1.28rem / 1.5 1.28rem * 1.5;
+                  bottom: 0;
+                  display: block;
+
+                  > i {
+                    margin-left: .4rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////// SECTION 7
+
+        section.sdTfOmAPv {
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////// FOOTER
+
+        footer {
+          font-size: 1.28rem;
+
+          a {
+
+            &.da_capo {
+              font-size: 1.28rem;
+            }
+
+            &.nav-link {
+              .transition;
+              padding: 0;
+            }
+          }
+
+          p {
+            margin: 0;
+          }
+
+          ul {
+            margin: 0;
+          }
+
+          > .container,
+          > .container-fluid {
+
+            &:nth-of-type(1) {
+              padding: 1.28rem * 2 1.28rem 1.28rem * 1.5 1.28rem;
+
+              svg {
+                height: 1.28rem * 3.2; width: auto;
+                margin: 0;
+              }
+
+              h5 {
+                font-size: 1.28rem * 1.4;
+                margin-top: 1.28rem;
+                margin-bottom: 1.28rem;
+              }
+            }
+
+            &:nth-of-type(2) {
+              padding: 1.28rem / 1.5;
+
+              p {
+                font-size: 1.28rem;
+              }
+
+              .da_capo {
+                display: block;
+                font-size: 1.28rem;
+              }
+
+              ul {
+                 li {
+                   margin-left: .5rem !important;
+                 }
+              }
+            }
+
+            > .row {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+}

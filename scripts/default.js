@@ -52,8 +52,6 @@
     //   console.log(wScroll);
     // });
 
-    console.log(stickyHeight);
-
   }
 
   function smoothScrollToTop() {
@@ -74,8 +72,11 @@ jQuery(document).ready(function($) {
 
   if (document.body.classList.contains('index-Kr99nnb4')) {
     parallaxHeader();
-    console.log('hello!');
   }
+
+  $('.navbar-toggler').click(function() {
+    $('main > form').toggleClass('fadeOut');
+  });
 
   console.log('↑ ↑ ↓ ↓ ← → ← → b a');
 });

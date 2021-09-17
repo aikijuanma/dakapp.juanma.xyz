@@ -1,0 +1,878 @@
+// main: default.less
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+html {
+  height: 100%; width: 100%;
+  margin: 0;
+  padding: 0;
+
+  body {
+    height: 100%; width: 100%;
+    margin: 0;
+    padding: 0;
+
+    .page {
+
+      > .container,
+      > .container-fluid {
+        padding-right: 0; padding-left: 0;
+
+        @headerHeight: 128px;
+        @mainHeight: 568px;
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////// HEADER
+
+        header {
+
+          ////////////////////////////////////////////////////////////////
+          ///////////////////////////////////////////////// NAVBAR DEFAULT
+
+          .navbar {
+            padding-top: 0; padding-bottom: 0;
+
+            > .container,
+            > .container-fluid {
+              padding-right: 0;
+              padding-left: 0;
+            }
+
+            .navbar-brand {
+              margin-right: 0;
+              padding: 1.6rem;
+
+              svg {
+                height: 1.28rem * 1.6; width: auto;
+              }
+            }
+
+            .navbar-toggler {
+              border-radius: 0;
+              border: 0;
+              font-size: 1.28rem * 1.2;
+              line-height: 0;
+              padding: 1.6rem;
+
+              &:focus {
+              }
+
+              > .navbar-toggler-icon {
+              }
+
+              &[aria-expanded="false"] {
+
+                > .navbar-toggler-icon {
+                }
+              }
+
+              &[aria-expanded="true"] {
+
+                > .navbar-toggler-icon {
+                }
+              }
+            }
+
+            .navbar-collapse {
+
+              > ul {
+
+                > li {
+                  display: block;
+
+                  > a.nav-link {
+                    font-size: 1.28rem;
+                    padding: 1rem;
+
+                    &.active {
+                    }
+
+                    &:focus,
+                    &:hover {
+                    }
+                  }
+                }
+              }
+
+              ////////////////////////////////////////////////////////////////
+              //////////////////////////////////////////////// NAVBAR EXPANDED
+
+              &.show {
+
+                > ul {
+
+                  > li {
+
+                    > a.nav-link {
+
+                      &.active {
+                      }
+
+                      &:focus,
+                      &:hover {
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.show + form {
+                display: flex !important;
+              }
+            }
+
+            ////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////// NAVBAR LOGIN + SIGNUP
+
+            form {
+              display: none;
+              height: auto; width: 100%;
+
+              .btn {
+                display: block;
+                font-size: 1.28rem;
+                padding: 1rem;
+                height: auto; width: 100%;
+                border-radius: 0;
+
+                &:nth-of-type(1) {
+                  border-top: 1px solid @White;
+                  border-right: 1px solid @White;
+                }
+
+                &:nth-of-type(2) {
+                }
+              }
+            }
+
+            ////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////// NAVBAR DEFAULT SCROLL
+
+            &.is-active {
+
+              .navbar-brand {
+              }
+
+              .navbar-toggler {
+
+                &:focus {
+                }
+
+                > .navbar-toggler-icon {
+                }
+
+                &[aria-expanded="false"] {
+
+                  > .navbar-toggler-icon {
+                  }
+                }
+
+                &[aria-expanded="true"] {
+
+                  > .navbar-toggler-icon {
+                  }
+                }
+              }
+
+              .navbar-collapse {
+
+                > ul {
+
+                  > li {
+
+                    > a.nav-link {
+
+                      &.active {
+                      }
+
+                      &:focus,
+                      &:hover {
+                      }
+                    }
+                  }
+                }
+              }
+
+              form {
+
+                .btn {
+
+                  &:nth-of-type(1) {
+                    border-top: 1px solid @Black;
+                    border-right: 1px solid @Black;
+                  }
+
+                  &:nth-of-type(2) {
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////// MAIN
+
+        main {
+          height: @mainHeight;
+
+          > .container,
+          > .container-fluid {
+            background-position: -410px center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%; width: 100%;
+            max-height: 2400px;
+          }
+
+          > form {
+
+            @mainInputHeight: 64px / 1.6;
+            @mainCTAWidth: 90%;
+
+            border-radius: 1.28rem;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            height: auto; width: @mainCTAWidth;
+            padding: 1.28rem;
+            padding-left: 1.28rem * 1.2;
+            left: 0; top: 40%;
+
+            .container,
+            .container-fluid {
+              padding-right: 1.28rem;
+            }
+
+            h2 {
+              font-size: 1.28rem * 1.8;
+              line-height: 1.28rem * 2;
+            }
+
+            p {
+              font-size: 1.28rem / 1.4;
+              line-height: 1.28rem / 1.2;
+              margin-bottom: 1.28rem;
+            }
+
+            input {
+              border-radius: .32rem;
+              font-size: 1rem;
+              height: @mainInputHeight; width: 100%;
+              padding: 1.28rem / 1.6 1.28rem;
+              text-align: center;
+              margin-bottom: 1.28rem / 2;
+            }
+
+            button {
+              border: 0;
+              border-radius: .32rem;
+              font-size: 1.2rem;
+              line-height: 1.2rem;
+              margin-bottom: 0;
+              height: @mainInputHeight; width: 100%;
+              padding: 0;
+
+              > i {
+                margin-left: .4rem;
+              }
+            }
+          }
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////// HOME
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////// SECTION 1
+
+        section.sIFtIfCa4 {
+
+          @sIFtIfCa4ColumnWidth: 80%;
+
+          > .container,
+          > .container-fluid {
+            margin-top: 1.28rem * 3;
+
+            > .row {
+              margin: 0;
+
+              &:nth-of-type(1) > .col:nth-of-type(1) > img {
+                box-shadow: 1.28rem / 2 1.28rem / 2 @Blue;
+
+                &:focus,
+                &:hover {
+                  box-shadow: 1.28rem 1.28rem @Blue;
+                }
+              }
+              &:nth-of-type(2) > .col:nth-of-type(2) > img {
+                box-shadow: -1.28rem / 2 1.28rem / 2 @Copper;
+
+                &:focus,
+                &:hover {
+                  box-shadow: -1.28rem 1.28rem @Copper;
+                }
+              }
+              &:nth-of-type(3) > .col:nth-of-type(1) > img {
+                box-shadow: 1.28rem / 2 1.28rem / 2 @Grey;
+
+                &:focus,
+                &:hover {
+                  box-shadow: 1.28rem 1.28rem @Grey;
+                }
+              }
+              &:nth-of-type(4) > .col:nth-of-type(2) > img {
+                box-shadow: -1.28rem / 2 1.28rem / 2 @Crimson;
+
+                &:focus,
+                &:hover {
+                  box-shadow: -1.28rem 1.28rem @Crimson;
+                }
+              }
+
+              &:nth-of-type(1) > .col:nth-of-type(1),
+              &:nth-of-type(3) > .col:nth-of-type(1) {
+
+                > img {
+                  float: right;
+                  margin-right: 1.28rem * 1.6;
+                }
+              }
+
+              &:nth-of-type(2) > .col:nth-of-type(2),
+              &:nth-of-type(4) > .col:nth-of-type(2) {
+
+                > img {
+                  float: left;
+                  margin-left: 1.28rem * 1.6;
+                }
+              }
+
+              &:nth-of-type(1) > .col:nth-of-type(2),
+              &:nth-of-type(3) > .col:nth-of-type(2) {
+
+                > div {
+                  float: left;
+                  margin-left: 1.28rem * 1.6;
+                }
+              }
+
+              &:nth-of-type(2) > .col:nth-of-type(1),
+              &:nth-of-type(4) > .col:nth-of-type(1) {
+
+                > div {
+                  float: right;
+                  margin-right: 1.28rem * 1.6;
+                }
+              }
+
+              &:nth-of-type(1) > .col:nth-of-type(2),
+              &:nth-of-type(2) > .col:nth-of-type(1),
+              &:nth-of-type(3) > .col:nth-of-type(2),
+              &:nth-of-type(4) > .col:nth-of-type(1) {
+
+                > div {
+                  height: auto; width: @sIFtIfCa4ColumnWidth;
+                }
+
+                h5 {
+                  font-size: 1.28rem * 1.96;
+                  line-height: 1.28rem * 1.8;
+                  margin: 1.28rem * 2 0 .5rem 0;
+                }
+
+                p {
+                  font-size: 1.28rem * 1;
+                  line-height: 1.28rem * 1.2;
+                  margin-bottom: 0;
+                }
+
+                a {
+                  border: 0;
+                  border-radius: .32rem * 2;
+                  font-size: 1.4rem;
+                  line-height: 1.6rem;
+                  margin: 1.28rem 0 1.28rem * 3 0;
+                  height: 64px; width: auto;
+                  padding: 1.28rem 1.28rem * 2;
+
+                  > i {
+                    margin-left: .4rem;
+                  }
+                }
+              }
+
+              > .col {
+                padding-left: 0;
+                padding-right: 0;
+
+                img {
+                  height: auto; width: @sIFtIfCa4ColumnWidth;
+                }
+              }
+            }
+          }
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////// SECTION 2
+
+        section.sEFR547JJ {
+          padding: 1.28rem * 3 1.28rem * 1.5;
+
+          h4 {
+            font-size: 1.28rem * 1.96;
+            line-height: 1.28rem * 1.8;
+            margin-top: 0;
+            margin-bottom: 1.28rem * 2;
+          }
+
+          > .container,
+          > .container-fluid {
+
+            > .row {
+
+              &:nth-of-type(1) {
+                padding-bottom: 0;
+                border-bottom: 0;
+              }
+
+              &:nth-of-type(2) {
+                padding-top: 0;
+              }
+
+              > .col {
+                margin-bottom: 1.28rem * 1.5;
+
+                &:nth-child(1) {
+                  padding: 0 1.28rem * 1.5 0 0;
+                }
+
+                &:nth-child(2) {
+                  padding: 0;
+                  border-right: 0;
+                  border-left: 0;
+                }
+
+                &:nth-child(3) {
+                  padding: 0;
+                }
+
+                svg {
+                  height: 1.28rem * 2.8; width: auto;
+                  margin: 1.28rem 1.28rem * 2;
+                  margin-left: 0;
+                }
+
+                h5 {
+                  font-size: 1.28rem * 1.5;
+                  margin-bottom: 1.28rem / 1.6;
+                }
+
+                p {
+                  .NunitoSans; .light;
+                  font-size: 1.28rem;
+                  line-height: 1.28rem * 1.1;
+                  padding-right: 0;
+                }
+              }
+            }
+          }
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////// SECTION 3
+
+        section.siLJsYxXs {
+
+          @siLJsYxXsContainerWidth: 90%;
+
+          > .container,
+          > .container-fluid {
+            padding: 1.28rem * 3 1.28rem * 1.5;
+
+            > .row {
+
+              &:nth-of-type(1) {
+                margin-bottom: 1.28rem * 3;
+              }
+
+              &:nth-of-type(2) {
+                margin-bottom: 0;
+              }
+
+              > .col {
+                margin-top: 0;
+
+                &:nth-last-of-type(1) {
+
+                  > .card {
+                    border: 0;
+                    border-radius: 0;
+                    border-top-left-radius:  .32rem * 4;
+                    border-top-right-radius:  .32rem * 4;
+                    height: 280px; width: auto;
+                    margin-bottom: 0;
+
+                    .card-body {
+                      padding: 1.28rem;
+                      bottom: 0;
+
+                      svg {
+                        height: auto; width: 100% / 2.5;
+                        margin: 1.28rem * 1.25 auto;
+                      }
+
+                      .card-text {
+                        font-size: 1.28rem / 1.1;
+                        line-height: 1.28rem * 1.1;
+                        margin: 0 auto;
+                        height: auto; width: auto;
+                      }
+
+                      button {
+                        border: 0;
+                        border-radius: .32rem;
+                        font-size: 1rem;
+                        line-height: 1.1rem;
+                        margin: 1.28rem 0;
+                        height: 64px; width: auto;
+                        padding: 1.28rem;
+
+                        > i {
+                          margin-left: .4rem;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                > .card {
+                  border: 0;
+                  border-radius: 0;
+                  border-top-left-radius:  .32rem * 4;
+                  border-top-right-radius:  .32rem * 4;
+                  margin-bottom: 1.28rem * 1.5;
+
+                  img {
+                    border-top-left-radius:  .32rem * 4;
+                    border-top-right-radius:  .32rem * 4;
+                  }
+
+                  .card-body {
+                    padding: .8rem;
+
+                    .card-title {
+                      font-size: 1.28rem;
+                      margin: 0 auto;
+                      margin-bottom: 0;
+                      height: auto; width: auto;
+                    }
+
+                    .card-text {
+                      font-size: 1.28rem / 1.1;
+                      line-height: 1.28rem * 1.1;
+                      margin: 0 auto;
+                      height: auto; width: auto;
+                    }
+                  }
+                }
+
+                h5 {
+                  font-size: 1.28rem * 1.5;
+                  line-height: 1.28rem * 1.75;
+                  margin: 0 auto;
+                  margin-bottom: 1.28rem;
+                  height: auto; width: @siLJsYxXsContainerWidth;
+                }
+
+                p {
+                  font-size: 1.28rem;
+                  line-height: 1.28rem * 1.1;
+                  margin: 0 auto;
+                  height: auto; width: @siLJsYxXsContainerWidth;
+                }
+              }
+            }
+          }
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////// SECTION 4
+
+        section.sagf4ElIb {
+          padding: 0;
+
+          video {
+            height: auto; width: 100%;
+          }
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////// SECTION 5
+
+        section.smeXZI4gU {
+
+          @smeXZI4gUContainerWidth: 90%;
+
+          > .container,
+          > .container-fluid {
+            padding: 1.28rem * 3 1.28rem * 1.5;
+
+            > .row {
+              margin: 0 auto;
+
+              > .col {
+
+                h5 {
+                  font-size: 1.28rem * 1.5;
+                  line-height: 1.28rem * 1.75;
+                  margin: 0 auto;
+                  margin-bottom: 1.28rem;
+                  height: auto; width: @smeXZI4gUContainerWidth;
+                }
+
+                p {
+                  font-size: 1.28rem;
+                  line-height: 1.28rem * 1.1;
+                  margin: 0 auto;
+                  height: auto; width: @smeXZI4gUContainerWidth;
+                }
+              }
+
+              &:nth-child(2) {
+                padding-top: 0;
+                margin-top: 0;
+
+                > .col {
+
+                  &:nth-child(1) {
+                    border: 0;
+                    padding: 0;
+                  }
+
+                  &:nth-child(2) {
+                    border: 0;
+                    padding: 0;
+                    margin-top: -1.28rem;
+                  }
+
+                  &:nth-child(3) {
+                    border: 0;
+                    padding: 0;
+                    margin-top: -1.28rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////// SECTION 6
+
+        section.sKoDwaH2H {
+
+          @sKoDwaH2HButtonHeight: 64px;
+
+          .card-group {
+
+            .card {
+              padding: 1.28rem;
+              margin-bottom: 0;
+
+              .card-body {
+                padding-right: 0;
+                padding: 0;
+                padding-bottom: @sKoDwaH2HButtonHeight;
+
+                .card-title {
+                  font-size: 1.28rem * 2.4;
+                  margin-bottom: 1.28rem * 1.2;
+
+                  b {
+                    font-size: 1.28rem * 2.2;
+                  }
+
+                  small {
+                    font-size: 1.28rem * 1.2;
+                    margin-left: 1.28rem / 3;
+                  }
+                }
+
+                .card-text {
+                  font-size: 1.28rem;
+                  margin-bottom: 1.28rem * 2;
+                }
+
+                a {
+                  border: 0;
+                  border-radius: .32rem * 2;
+                  font-size: 1.6rem;
+                  line-height: 1.6rem;
+                  margin-bottom: 0;
+                  margin: 0 auto;
+                  height: 64px; width: 100%;
+                  padding: 1.28rem 1.28rem * 1.5;
+                  bottom: 0;
+                  display: block;
+
+                  > i {
+                    margin-left: .4rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////// SECTION 7
+
+        section.sdTfOmAPv {
+
+          > .carousel {
+
+            > .carousel-indicators {
+              margin: 1.28rem 0 1.28rem * 3 0;
+            }
+
+            > .carousel-inner {
+
+              > .carousel-item {
+
+                > img {
+                  height: auto; width: 80%;
+                  margin: 1.28rem * 1.5 auto;
+                  margin-top: 1.28rem * 3;
+                  box-shadow: 1.28rem 1.28rem @Blue;
+
+                  &:focus,
+                  &:hover {
+                    box-shadow: 1.28rem * 1.5 1.28rem * 1.5 @Blue;
+                  }
+                }
+
+                > .carousel-caption {
+                  left: 0; right: 0;
+                  height: auto; width: 64%;
+                  margin: 0 auto;
+                  margin-bottom: 1.28rem * 3;
+
+                  svg {
+                    height: auto; width: 1.28rem;
+                    margin: 1.28rem * 1.5 0;
+                  }
+
+                  p {
+                    font-size: 1.28rem;
+                    line-height: 1.28rem * 1.1;
+                    margin: 0;
+                  }
+
+                  b {
+                    font-size: 1.28rem * 1;
+                    margin: 1.28rem * 1.5 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////// FOOTER
+
+        footer {
+          font-size: 1.28rem;
+
+          a {
+
+            &.da_capo {
+              font-size: 1.28rem;
+            }
+
+            &.nav-link {
+              .transition;
+              padding: 0;
+            }
+          }
+
+          p {
+            margin: 0;
+          }
+
+          ul {
+            margin: 0;
+          }
+
+          > .container,
+          > .container-fluid {
+
+            &:nth-of-type(1) {
+              padding: 1.28rem * 1.5 0 1.28rem 0;
+
+              svg {
+                height: 1.28rem * 3.2; width: auto;
+                margin: 0 auto;
+              }
+
+              h5 {
+                font-size: 1.28rem * 1.4;
+                margin-top: 1.28rem;
+                margin-bottom: 1.28rem;
+              }
+            }
+
+            &:nth-of-type(2) {
+              padding: 1.28rem / 1.5;
+
+              p {
+                font-size: 1.28rem;
+              }
+
+              .da_capo {
+                display: none;
+                font-size: 1.28rem / 1.5;
+              }
+
+              ul {
+                 li {
+                   margin-left: .5rem !important;
+                 }
+              }
+            }
+
+            > .row {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
