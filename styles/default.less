@@ -711,6 +711,8 @@ html {
 
         section.sKoDwaH2H {
 
+          display: none;
+
           background-color: @White;
 
           .card-group {
@@ -732,6 +734,89 @@ html {
 
               .card-body {
                 position: relative;
+
+                .card-title {
+                  .FiraSans; .semi_bold;
+
+                  b {
+                    .semi_bold;
+                  }
+
+                  small {
+                    .extra_light;
+                    display: inline-block;
+                  }
+                }
+
+                .card-text {
+                  .FiraSans; .extra_light;
+
+                  b {
+                    .regular;
+                  }
+                }
+
+                a {
+                  .FiraSans; .regular;
+                  .transition;
+                  background-color: darken(@Crimson, 2%);
+                  color: darken(@White, 4%);
+                  display: block;
+                  text-transform: uppercase;
+                  position: absolute;
+
+                  &:focus,
+                  &:hover {
+                    background-color: @Crimson;
+                    color: @White;
+
+                  }
+
+                  &:focus,
+                  &:focus-within,
+                  &:focus-visible {
+                    border-color: transparent;
+                    box-shadow: none;
+                    outline: 0;
+                  }
+
+                  > i {
+                    .bold;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////// SECTION 6.1
+
+        section.gEJE5Rvg {
+
+          background-color: @White;
+
+          .card-group {
+
+            .card {
+              color: @White;
+              background-color: fade(@Copper, 80%);
+              border-radius: 0;
+
+              .card-body {
+                position: relative;
+
+                figure {
+                  display: block;
+                  height: auto; width: 100%;
+                  float: left;
+
+                  img {
+                    height: auto; width: 100%;
+                  }
+                }
 
                 .card-title {
                   .FiraSans; .semi_bold;
